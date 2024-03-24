@@ -11,23 +11,24 @@ Diminished Java (DJ) is a turing-complete simpilified version of Java with the m
 - Basic types (objects, natual numbers, booleans)
 - Basic operators (+, -, *, (), <, ==, !, &&, obj.function() etc.) with proper precedence
 - Single files (no importing)
+- Single line comments
 - DJ is compiled into a basic interpreted assembly language called Diminished Instruction Set Machine (DISM). [More information on DISM](https://cse.usf.edu/~ligatti/compilers/24/as1/dism/DISM-definition.pdf)
 - [More information on DJ](https://cse.usf.edu/~ligatti/compilers/24/as1/dj/DJ-definition.pdf)
 
-## Lexing
+## Lexing / Scanning
 - Lexing is accomplished using a [Flex](https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)) lexing file (**dj.l**)
 - Regular expressions define the rules for recognizing tokens
 - A token stream is generated, which is passed to the parser
 
-## Parsing
+## Parsing / Syntactic analysis
 - Parsing is accomplished using a [Bison](https://en.wikipedia.org/wiki/GNU_Bison) parsing file (**dj.y**)
 - A context-free grammar defines the rules for parsing tokens
 - An abstract syntax tree is built (**ast.h** and **ast.c**) from recognized tokens
 
-## Type checking
+## Type checking / Semantic analysis
 - First, a symbol table (**symtbl.h** and **symtbl.c**) is built from traversing the AST
 - Then, the symbol table is traversed, ensuring all type rules are enforced (**typchk.h** and **typchk.c**)
-- Finally, expressions are type checked
+- Finally, expressions are type checked recursively (typeExprs() and typeExpr() in typchk.c)
 
 ## Code Generation
 - To be continued
