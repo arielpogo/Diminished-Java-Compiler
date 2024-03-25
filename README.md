@@ -27,7 +27,7 @@ Diminished Java (DJ) is a turing-complete simpilified version of Java with the m
 
 ## Type checking / Semantic analysis
 - First, a symbol table (**symtbl.h** and **symtbl.c**) is built from traversing the AST
-- Then, the symbol table is traversed, ensuring all type rules are enforced (**typchk.h** and **typchk.c**)
+- Then, the symbol table is traversed, ensuring all type rules are enforced (**typecheck.h** and **typecheck.c**)
 - Finally, expressions are type checked recursively (typeExprs() and typeExpr() in typchk.c)
 
 ## Code Generation
