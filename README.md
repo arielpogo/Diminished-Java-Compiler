@@ -71,7 +71,7 @@ Example 2 (this image was edited for space and ease of reading):
 - Finally, expressions are type checked recursively (typeExprs() and typeExpr() in typchk.c)
 
 ## Code Generation
-- To be continued
+- I will be learning this topic in the coming weeks.
 
 ## Progress
 - [x] Lexing
