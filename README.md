@@ -1,7 +1,7 @@
 # Diminished-Java-Compiler
 The compiler I created for COP4620 Compilers at the University of South Florida. The syllabus and assignment descriptions are available [here](https://www.cse.usf.edu/~ligatti/compilers/24/).
-> [!NOTE]
-> **The source code is not public** due to course restrictions prohibiting public posting of coursework. A private copy is available by request.
+> [!IMPORTANT]
+> ***The source code is not public*** due to course restrictions prohibiting public posting of coursework. A private copy is available by request.
 
 ## Diminished Java
 Diminished Java (DJ) is a turing-complete simpilified version of Java with the most basic features retained:
